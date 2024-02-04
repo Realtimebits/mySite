@@ -2,7 +2,7 @@
   if (isset($_POST['email']))  {
   
     //Email information
-    $admin_email = "ramdisplay@gmail.com";
+    $admin_email = "realtimebits@gmail.com";
     $name = $_POST['name'];
     $email = $_POST['email'];
     $phone = $_POST['phone'];
