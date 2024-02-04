@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/2ceda7565f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/utilities.css">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Realtime Bits | Graphic Web Digital Design: Read Our Blog</title>
+</head>
+
+<body id="home">
+  <header class="hero blog">
+    <div id="navbar" class="navbar top">
+      <h1 class="logo"><img src="images/logo/logoTransparent.png" height="40"></h1>
+
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#portfolio">Portfolio</a></li>
+          <li><a href="index.html#blog">Blog</a></li>
+          <li><a href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="initial">Ritika Monga</div>
+
+    <div class="content">
+      <h1>Blog</h1>
+    </div>
+  </header>
+  <main>
+    <!-- Blog -->
+    <article class="flex-columns">
+      <div class="row">
+
+        <div class="column">
+          <div class="column-1">
+            <img src="images/blog/blog1.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="column-2 bg-light">
+            <h2>What SEO can do for your business</h2>
+            <p class="meta">
+              <i class="fas fa-user"></i> Posted by <strong>Ritika Monga</strong>| January 1 2024
+            </p>
+            <p>Realtime Bits provides the best SEO services in India to help you to increase your business with an
+              effective SEO campaign, specifically designed for your unique business. You can avail of our services to
+              get more relevant search traffic at your website today.</p>
+
+            <a href="post.html" class="btn btn-dark">
+              <i class="fas fa-chevron"></i>
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="flex-columns flex-reverse">
+      <div class="row">
+
+        <div class="column">
+          <div class="column-1">
+            <img src="images/blog/blog2.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="column-2 bg-dark">
+            <h2>BTC Robots</h2>
+            <p class="meta">
+              <i class="fas fa-user"></i> Posted by <strong>Ritika Monga</strong>| For VAP Group| October 3 2023
+            </p>
+            <p>Since the bitcoin price is going up at the exponential rate it is hoped to do so till it rests between
+              $15,000 and $30,000 per BTC. BTC is not a stock bubble but can be compared to other tech stocks like
+              websites, email, MP3… The technological innovation is capable of replacing the prior methods of payment in
+              5 stages. Today more and more people have wallets and more and more merchants are beginning to accept it.
+              The sudden increase of automated trading bots is because the market has opened up enough and yet to tap
+              upon the skeptic lot who are in awe of the increasing Bitcoin prices.</p>
+
+            <a href="post.html" class="btn btn-light">
+              <i class="fas fa-chevron"></i>
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article class="flex-columns">
+      <div class="row">
+
+        <div class="column">
+          <div class="column-1">
+            <img src="images/blog/blog3.jpg" alt="">
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="column-2 bg-light">
+            <h2>Product Description: NutriChef Food Dehydrator Machine</h2>
+            <p class="meta">
+              <i class="fas fa-user"></i> Posted by <strong>Ritika Monga</strong>| January 1 2024
+            </p>
+            <p>Fad, fiction or a practical utility? Practical utility, that’s how I would describe the food dehydrator
+              machine. And that is exactly why it is quickly finding its place in the kitchens of the Western, Eastern,
+              and the urban and the rural homes.
+              Dehydrators help to dry foods and help to preserve them for a longer duration of time. It is a practice
+              which has been in use since time immemorial; only, the technology has been updated. So if you told your
+              granny or great-granny about the dehydrator and its use, she is not going to be stunned with your new
+              idea. She may stun you instead!</p>
+
+            <a href="post.html" class="btn btn-dark">
+              <i class="fas fa-chevron"></i>
+              Read More
+            </a>
+          </div>
+        </div>
+      </div>
+    </article>
+
+  </main>
+  <!-- Footer (after /main)-->
+  <footer class="footer bg-dark">
+    <div class="social">
+      <!-- <a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+     <a href="#"><i class="fab fa-twitter fa-2x"></i></a>
+      <a href="#"><i class="fab fa-youtube fa-2x"></i></a> -->
+      <a href="https://www.linkedin.com/in/ritika-monga-5951a62a4/" target="_blank"><i
+          class="fab fa-linkedin fa-2x"></i></a>
+    </div>
+    <p>Copyright &copy; 2024 Realtime Bits</p>
+
+  </footer>
+
+  <script>
+
+    const navbar = document.getElementById('navbar');
+    let scrolled = false;
+    window.onscroll = function () {
+      if (window.pageYOffset > 100) {
+        navbar.classList.remove('top');
+        if (!scrolled) {
+          navbar.style.transform = 'translateY(-70)';
+        }
+        setTimeout(function () {
+          navbar.style.transform = 'traslateY(0)';
+          scrolled = true;
+        }, 200);
+      } else {
+        navbar.classList.add('top');
+        scrolled = false;
+      }
+    }
+  </script>
+</body>
+
+</html>
