@@ -1,0 +1,288 @@
+/* Mobile */
+@media(max-width:768px) {
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  img {
+    width: 100vw;
+    border: none;
+  }
+
+  .navbar {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    height: 120px;
+    padding: 20px;
+    align-items: center;
+  }
+
+  .initial {
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 67vw;
+    position: fixed;
+    top: 64px;
+    margin: auto;
+  }
+
+  .navbar a {
+    padding: 10px 10px;
+    margin: 0 3px;
+
+  }
+
+  .navbar .logo {
+    align-self: center;
+    justify-self: center;
+  }
+
+  .flex-items {
+    flex-direction: column;
+  }
+
+  .centered-portfolio {
+    left: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .flex-columns .column,
+  .flex-grid .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
+  .team img {
+    width: 70%;
+  }
+
+  .objects-dist {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    grid-template-columns: repeat(1, 1fr);
+    margin: auto;
+    padding-left: 0;
+  }
+
+  .objects-dist img {
+    align-items: center;
+    align-content: center;
+  }
+
+  .clients-dist {
+    display: grid;
+    padding: 1rem 0;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+  }
+
+  .clients-dist img {
+    width: fit-content;
+  }
+
+
+}
+
+@media(max-width: 600px) {
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+  html,
+  body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  img {
+    width: 100vw;
+    border: none;
+  }
+
+  .centered-portfolio {
+    left: 0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    width: 100vw;
+  }
+
+  .objects-dist {
+    flex-direction: column;
+    /* |  |sky|  | */
+    align-items: center;
+    align-content: center;
+    grid-template-columns: repeat(1, 1fr);
+    margin: auto;
+  }
+
+  .objects-dist {
+    align-items: center;
+    align-content: center;
+  }
+
+  .clients-dist {
+    display: grid;
+    padding: 0;
+    grid-template-columns: repeat(auto-fit, minmax(30px, 1fr));
+  }
+
+  .clients-dist img {
+    width: fit-content;
+  }
+}
+
+@media(max-width: 500px) {
+  * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+
+  html,
+  body {
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  img {
+    width: 100vw;
+    border: none;
+  }
+
+  .centered-portfolio {
+    left: 0;
+    margin: 0;
+    padding: 0;
+    border: none;
+    justify-items: left;
+  }
+
+  nav {
+    display: grid;
+    grid-template-rows: 1fr;
+    align-items: center;
+    align-content: center;
+    padding: 0;
+    margin: 0;
+    max-width: 100vw;
+  }
+
+  .navbar {
+    display: flex;
+    width: 100vw;
+    flex: 1;
+    flex-direction: column;
+    height: 220px;
+    padding: 20px;
+    align-items: center;
+    align-content: center;
+    text-align: center;
+  }
+
+  .navbar .logo {
+    top: 0;
+    left: 0;
+    width: fit-content;
+    left: 0;
+    justify-self: center;
+    margin: 0;
+    padding: 0;
+  }
+
+  .hero {
+    height: 100vh;
+    max-width: 100vw;
+    position: relative;
+    left: 0;
+    margin: 0;
+  }
+
+  .hero .content h1 {
+    font-size: 30px;
+    margin-top: 20px;
+    padding: 0;
+    margin: 0;
+    align-self: center;
+  }
+
+
+  .navbar ul {
+    display: inline-block;
+  }
+
+  .navbar a {
+    padding: 0;
+    margin: 10 3px;
+  }
+
+  .initial {
+    display: inline;
+    width: 50vw;
+    position: fixed;
+    align-items: left;
+    align-content: left;
+    text-align: left;
+    top: 55px;
+    left: 22px;
+  }
+
+  .hero::before {
+    max-width: 100vw;
+  }
+
+  .hero .content p {
+    font-size: 16px;
+    margin: 10px 0 15px;
+    /*top lt-rt bottom*/
+  }
+
+  .flex-columns .row {
+    width: fit-content;
+  }
+
+  .flex-grid {
+    max-width: fit-content;
+  }
+
+  .objects-dist {
+    align-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 0;
+    font-family: 'barlow condensed', sans-serif;
+    font-size: 1rem;
+    max-width: fit-content;
+  }
+
+
+  .clients-dist {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-content: space-between;
+    align-items: center;
+    width: fit-content;
+  }
+}
