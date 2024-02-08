@@ -52,6 +52,7 @@ img {
 
 /* Navbar*/
 
+
 .navbar {
   display: flex;
   align-items: center;
@@ -83,7 +84,11 @@ img {
 }
 
 .navbar .logo {
-  font-weight: 400;
+  border: none;
+}
+
+.navbar .logo a {
+  border: none;
 }
 
 .navbar.top {
@@ -96,7 +101,7 @@ img {
   justify-content: center;
   position: fixed;
   top: 52px;
-  left: 46px;
+  left: 72px;
 }
 
 
@@ -285,6 +290,10 @@ textarea {
   gap: 2rem;
   justify-content: space-between;
   grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.contact {
+  margin-top: 5rem;
 }
 
 .clients-dist img {
