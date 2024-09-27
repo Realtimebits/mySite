@@ -77,8 +77,18 @@
   }
 
   #clients .items img {
-    width: 80%;
+    width: 100%;
   }
+
+  .clients-dist {
+    display: grid;
+    grid-template-rows: 4;
+    grid-template-columns: repeat(4, 3fr);
+    grid-gap: 1rem;
+    padding: 1rem;
+    align-items: center;
+  }
+
 
   #clients .items div:last-child {
     display: none;
